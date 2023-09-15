@@ -20,6 +20,11 @@ h1 {
     font-weight:300;
 }
 
+#ack h3{
+    /* font-size:10px; */
+    font-weight:200;
+}
+
 .disclaimerbox {
     background-color: #eee;		
     border: 1px solid #eeeeee;
