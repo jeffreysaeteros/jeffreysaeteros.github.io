@@ -1,3 +1,3 @@
 ## <b>Portfolio Website</b>
 
-To view, go to `https://www.jeffreysaeteros.com/`
+To view, go [here](https://www.jeffreysaeteros.com/)
