@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Picker</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      .color {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      #red {
+        background-color: rgb(186, 124, 101);
+      }
+      #green {
+        background-color: rgb(202, 132, 110);
+      }
+      #blue {
+        background-color: rgb(184, 64, 55);
+      }
+      #yellow {
+        background-color: rgb(130, 45, 46);
+      }
+      #orange {
+        background-color: rgb(48, 48, 48);
+      }
+      #purple {
+        background-color: rgb(64, 63, 62);
+      }
+
+      #c1 {
+        background-color: rgb(75, 83, 78);
+      }
+
+      #c2 {
+        background-color: rgb(80, 72, 64);
+      }
+
+      #c3 {
+        background-color: rgb(142, 119, 107);
+      }
+
+      #c4 {
+        background-color: rgb(188, 175, 161);
+      }
+
+      #c5 {
+        background-color: rgb(175, 160, 141);
+      }
+
+      #c6 {
+        background-color: rgb(195, 147, 101);
+      }
+
+      #selectedColor {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .selected {
+        border: 3px solid black;
+        box-shadow: 0 0 10px 3px #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color" id="red" data-color="186, 124, 101"></div>
+    <div class="color" id="green" data-color="202, 132, 110"></div>
+    <div class="color" id="blue" data-color="184, 64, 55"></div>
+    <div class="color" id="yellow" data-color="130, 45, 46"></div>
+    <div class="color" id="orange" data-color="48, 48, 48"></div>
+    <div class="color" id="purple" data-color="64, 63, 62"></div>
+
+    <div class="color" id="c1" data-color="75, 83, 78"></div>
+    <div class="color" id="c2" data-color="80, 72, 64"></div>
+    <div class="color" id="c3" data-color="142, 119, 107"></div>
+    <div class="color" id="c4" data-color="188, 175, 161"></div>
+    <div class="color" id="c5" data-color="175, 160, 141"></div>
+    <div class="color" id="c6" data-color="195, 147, 101"></div>
+    <div id="selectedColor">Selected Color: None</div>
+
+    <script>
+      document.querySelectorAll(".color").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          // Remove highlight from all colors
+          document.querySelectorAll(".color").forEach((div) => {
+            div.classList.remove("selected");
+          });
+
+          // Highlight the selected color
+          item.classList.add("selected");
+
+          // Update the display text
+          let color = item.getAttribute("data-color");
+          document.getElementById("selectedColor").innerText =
+            "Selected Color: " + color;
+        });
+      });
+    </script>
+  </body>
+</html>
