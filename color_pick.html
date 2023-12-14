@@ -14,7 +14,8 @@
         width: 50px;
         height: 50px;
         display: inline-block;
-        margin: 5px;
+        margin: 10px;
+
         cursor: pointer;
       }
 
@@ -38,7 +39,7 @@
       }
 
       #c1 {
-        background-color: rgb(75, 83, 78);
+        background-color: rgb(85, 99, 90);
       }
 
       #c2 {
@@ -64,28 +65,50 @@
       #selectedColor {
         margin-top: 20px;
         font-size: 20px;
+        font-family: futura;
       }
 
       .selected {
         border: 3px solid black;
         box-shadow: 0 0 10px 3px #888888;
       }
+
+      .text-height {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: futura;
+        font-size: 35px;
+      }
+      #color-container {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
-    <div class="color" id="red" data-color="186, 124, 101"></div>
-    <div class="color" id="green" data-color="202, 132, 110"></div>
-    <div class="color" id="blue" data-color="184, 64, 55"></div>
-    <div class="color" id="yellow" data-color="130, 45, 46"></div>
-    <div class="color" id="orange" data-color="48, 48, 48"></div>
-    <div class="color" id="purple" data-color="64, 63, 62"></div>
+    <div class="text-height">
+      <div>Pick a color pwease.</div>
+    </div>
 
-    <div class="color" id="c1" data-color="75, 83, 78"></div>
-    <div class="color" id="c2" data-color="80, 72, 64"></div>
-    <div class="color" id="c3" data-color="142, 119, 107"></div>
-    <div class="color" id="c4" data-color="188, 175, 161"></div>
-    <div class="color" id="c5" data-color="175, 160, 141"></div>
-    <div class="color" id="c6" data-color="195, 147, 101"></div>
+    <div id="color-container">
+      <div class="color" id="red" data-color="186, 124, 101"></div>
+      <div class="color" id="green" data-color="202, 132, 110"></div>
+      <div class="color" id="blue" data-color="184, 64, 55"></div>
+      <div class="color" id="yellow" data-color="130, 45, 46"></div>
+      <div class="color" id="orange" data-color="48, 48, 48"></div>
+      <div class="color" id="purple" data-color="64, 63, 62"></div>
+
+      <div class="color" id="c1" data-color="75, 83, 78"></div>
+      <div class="color" id="c2" data-color="80, 72, 64"></div>
+      <div class="color" id="c3" data-color="142, 119, 107"></div>
+      <div class="color" id="c4" data-color="188, 175, 161"></div>
+      <div class="color" id="c5" data-color="175, 160, 141"></div>
+      <div class="color" id="c6" data-color="195, 147, 101"></div>
+    </div>
     <div id="selectedColor">Selected Color: None</div>
 
     <script>
