@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: ltc-bodoni-175;
+    /* font-family: 'proxima-nova-condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+}
+
+/* NAVBAR */
+.navSpace {
+    margin: 0 auto 10px auto;
+    /* background-color: #white; */
+}
+
+.navbar-brand {
+    font-family: ltc-bodoni-175;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25pt;
+    margin-left: 30px;
+}
+
+.nav-item {
+    font-family: ltc-bodoni-175;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+    margin-right: 20px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+
+
+/* ABOUT */
+.synopsis h1 {
+
+    font-family: 'proxima-nova';
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: .01em;
+    margin: 1em 0;
+    margin-top: 1em;
+
+}
+
+.synopsis p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.5em;
+    text-transform: lowercase;
+    letter-spacing: 0em;
+    font-size: inherit;
+    margin: 0 0 1em;
+}
+
+.intro img {
+    height: 400px;
+    width: auto;
+}
+
+.thumbnail {
+    top: -50px;
+    left: -35px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/*change the number below to scale to the appropriate size*/
+.thumbnail:hover {
+    transform: scale(1.03);
+}
+
+
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: -15px;
+    z-index: 99999;
+    background: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.scroll-top i {
+    font-size: 40px;
+    color: olivedrab;
+    line-height: 0;
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+}
+
+.whiteSpace {
+    height: 50px;
+}
+
+.whiteSpace1 {
+    height: 10px;
+}
+
+.contact .info-item i {
+    font-size: 20px;
+    color: aquamarine;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #222425;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+/* FOOTER */
+
+.whiteFont {
+    font-family: ltc-bodoni-175;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20pt;
+    color: black;
+}
+
+footer {
+    /* background-color: black; */
+    height: 200px;
+}
+
+footer i {
+    color: black;
+    font-size: 40pt;
+}
+
+
+footer i:hover {
+    /* color: rgb(105, 105, 220); */
+    color: #ffba08;
+    cursor: pointer;
+}
+
+footer img {
+    width: 45px;
+    height: auto;
+}
+
+.vsco {
+    width: 60px;
+}
+
+.col-md-6 {
+    border: solid 0px white;
+}
+
+#liveToast img {
+    width: 20px;
+    height: auto;
+}
